@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+data.db
+data.db-wal
+data.db-shm
+.window_pos.json
+dist/
+build/
+*.ico
+*.log
+
+# 保留目录结构，忽略真实图片
+Pictures/**/*.jpg
+Pictures/**/*.jpeg
+Pictures/**/*.png
+Pictures/**/*.gif
+Pictures/**/*.bmp
+Pictures/**/*.webp
+Pictures/**/   # 确保空目录结构保留（git 不跟踪空目录，加 .gitkeep 更稳）

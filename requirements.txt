@@ -1,0 +1,8 @@
+# Personal Storage Manager - 依赖
+# Python 3.8+ | tkinter（通常随 Python 自带）
+
+# 必需
+Pillow>=10.0.0
+
+# 可选 — Excel 导出功能需要
+openpyxl>=3.1.0
