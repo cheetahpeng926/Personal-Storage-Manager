@@ -1,19 +1,35 @@
+﻿# Python
 __pycache__/
 *.pyc
+
+# 数据库（自动生成）
 data.db
 data.db-wal
 data.db-shm
+
+# 窗口位置缓存（自动生成）
 .window_pos.json
+
+# 打包产物
 dist/
 build/
-*.ico
+
+# 日志文件
 *.log
 
-# 保留目录结构，忽略真实图片
+# 测试产物
+tests/_tmp/
+tests/__pycache__/
+
+# 图片文件（保留目录结构和 .gitkeep）
+Pictures/**/*.png
 Pictures/**/*.jpg
 Pictures/**/*.jpeg
-Pictures/**/*.png
 Pictures/**/*.gif
 Pictures/**/*.bmp
 Pictures/**/*.webp
-Pictures/**/   # 确保空目录结构保留（git 不跟踪空目录，加 .gitkeep 更稳）
+
+# 临时/辅助文件（不推送）
+git_push_commands.txt
+release_notes_v3.7.md
+release_info_v3.7.md
