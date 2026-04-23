@@ -1,0 +1,26 @@
+# Personal Storage Manager - Git 推送命令顺序
+
+# ============================================
+# 从零开始：在 main 分支保留远程历史
+# ============================================
+
+# 1. 初始化 Git 仓库
+git init
+
+# 2. 添加远程仓库（origin 就是远程仓库的别名）
+git remote add origin https://github.com/cheetahpeng926/Personal-Storage-Manager.git
+
+# 3. 拉取远程仓库的内容和历史
+git fetch origin
+
+# 4. 把本地 main 分支指向远程 main 的最新提交（历史就接上了），本地文件不变
+git reset --soft origin/main
+
+# 5. 添加所有文件到暂存区
+git add .
+
+# 6. 提交（这个提交会接在远程历史后面）
+git commit -m "Version 3.7: Reconstruct the front-end using the Flet framework"
+
+# 7. 推送到远程 main 分支
+git push -u origin main
